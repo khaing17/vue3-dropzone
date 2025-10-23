@@ -464,28 +464,70 @@ const removeFile = (item) => {
   if (!item || !item.id) {
     return;
   }
-  
+
   if (item.type === 'url') {
-    // Remove from previews array (original URL previews)
     const currentPreviews = [...(props.previews || [])];
     const previewIndex = parseInt(item.id.replace('preview-', ''));
     if (!isNaN(previewIndex) && previewIndex >= 0 && previewIndex < currentPreviews.length) {
       currentPreviews.splice(previewIndex, 1);
       emit("update:previews", currentPreviews);
       emit("previewRemoved", item);
+
+      // 🔥 NEW: also emit model update if file corresponds to old image
+      if (props.modelValue && Array.isArray(props.modelValue)) {
+        const updatedModel = props.modelValue.filter(
+          (f) => f !== item.src && f?.src !== item.src
+        );
+        emit("update:modelValue", updatedModel.length ? updatedModel : null);
+      } else {
+        emit("update:modelValue", null);
+      }
     }
   } else if (item.isPreview) {
-    // Remove preview mode files from files array
     removeFileFromList(item);
   } else {
-    // Handle regular file removal
     if (props.serverSide) {
       removeFileFromServer(item);
     } else {
       removeFileFromList(item);
     }
   }
+
+  if (files.value.length === 0) {
+    emit("update:modelValue", null);
+  }
 };
+
+
+
+
+// Enhanced removeFile to handle both types
+// const removeFile = (item) => {
+//   if (!item || !item.id) {
+//     return;
+//   }
+  
+//   if (item.type === 'url') {
+//     // Remove from previews array (original URL previews)
+//     const currentPreviews = [...(props.previews || [])];
+//     const previewIndex = parseInt(item.id.replace('preview-', ''));
+//     if (!isNaN(previewIndex) && previewIndex >= 0 && previewIndex < currentPreviews.length) {
+//       currentPreviews.splice(previewIndex, 1);
+//       emit("update:previews", currentPreviews);
+//       emit("previewRemoved", item);
+//     }
+//   } else if (item.isPreview) {
+//     // Remove preview mode files from files array
+//     removeFileFromList(item);
+//   } else {
+//     // Handle regular file removal
+//     if (props.serverSide) {
+//       removeFileFromServer(item);
+//     } else {
+//       removeFileFromList(item);
+//     }
+//   }
+// };
 
 const removeFileFromServer = (item) => {
   const xhr = new XMLHttpRequest();

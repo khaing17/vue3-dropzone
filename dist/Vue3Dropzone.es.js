@@ -1,4 +1,4 @@
-import { openBlock as n, createElementBlock as d, createElementVNode as v, Fragment as _, createCommentVNode as p, createStaticVNode as x, normalizeClass as R, renderList as de, renderSlot as M, normalizeStyle as j, withModifiers as w, createBlock as L, toDisplayString as b, pushScopeId as ee, popScopeId as te, computed as B, mergeProps as W, withCtx as U, normalizeProps as V, guardReactiveProps as I, ref as P, watchEffect as J, createVNode as Q } from "vue";
+import { openBlock as n, createElementBlock as u, createElementVNode as v, Fragment as _, createCommentVNode as c, createStaticVNode as x, normalizeClass as N, renderList as de, renderSlot as M, normalizeStyle as R, withModifiers as w, createBlock as L, toDisplayString as b, pushScopeId as ee, popScopeId as te, computed as B, mergeProps as j, withCtx as W, normalizeProps as U, guardReactiveProps as I, ref as P, watchEffect as J, createVNode as Q } from "vue";
 const T = (e, g) => {
   const m = e.__vccOpts || e;
   for (const [l, f] of g)
@@ -23,7 +23,7 @@ const T = (e, g) => {
   ve
 ];
 function we(e, g) {
-  return n(), d("svg", pe, he);
+  return n(), u("svg", pe, he);
 }
 const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
   key: 0,
@@ -107,30 +107,30 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   class: "icon icon-tabler icons-tabler-outline icon-tabler-video"
-}, Ee = /* @__PURE__ */ v("path", {
+}, Ve = /* @__PURE__ */ v("path", {
   stroke: "none",
   d: "M0 0h24v24H0z",
   fill: "none"
-}, null, -1), He = /* @__PURE__ */ v("path", { d: "M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" }, null, -1), De = /* @__PURE__ */ v("path", { d: "M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" }, null, -1), Ne = [
+}, null, -1), Ee = /* @__PURE__ */ v("path", { d: "M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" }, null, -1), He = /* @__PURE__ */ v("path", { d: "M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" }, null, -1), De = [
+  Ve,
   Ee,
-  He,
-  De
-], Re = {
+  He
+], Ne = {
   __name: "Icon",
   props: {
     name: String
   },
   setup(e) {
-    return (g, m) => (n(), d(_, null, [
-      e.name === "xls" ? (n(), d("svg", ge, ye)) : p("", !0),
-      e.name === "txt" ? (n(), d("svg", ke, Se)) : p("", !0),
-      e.name === "doc" || e.name === "docx" ? (n(), d("svg", be, ze)) : p("", !0),
-      e.name === "pdf" ? (n(), d("svg", $e, Be)) : p("", !0),
-      e.name === "csv" ? (n(), d("svg", xe, Oe)) : p("", !0),
-      e.name === "mp4" || e.name === "mkv" || e.name === "mpeg-4" || e.name === "webm" || e.name === "mov" ? (n(), d("svg", Ae, Ne)) : p("", !0)
+    return (g, m) => (n(), u(_, null, [
+      e.name === "xls" ? (n(), u("svg", ge, ye)) : c("", !0),
+      e.name === "txt" ? (n(), u("svg", ke, Se)) : c("", !0),
+      e.name === "doc" || e.name === "docx" ? (n(), u("svg", be, ze)) : c("", !0),
+      e.name === "pdf" ? (n(), u("svg", $e, Be)) : c("", !0),
+      e.name === "csv" ? (n(), u("svg", xe, Oe)) : c("", !0),
+      e.name === "mp4" || e.name === "mkv" || e.name === "mpeg-4" || e.name === "webm" || e.name === "mov" ? (n(), u("svg", Ae, De)) : c("", !0)
     ], 64));
   }
-}, le = (e) => (ee("data-v-7240d52d"), e = e(), te(), e), je = ["src", "alt"], We = ["src", "alt"], Ue = ["onClick"], Ve = /* @__PURE__ */ le(() => /* @__PURE__ */ v("svg", {
+}, le = (e) => (ee("data-v-7240d52d"), e = e(), te(), e), Re = ["src", "alt"], je = ["src", "alt"], We = ["onClick"], Ue = /* @__PURE__ */ le(() => /* @__PURE__ */ v("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "20",
   height: "20",
@@ -150,7 +150,7 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
   /* @__PURE__ */ v("path", { d: "M18 6l-12 12" }),
   /* @__PURE__ */ v("path", { d: "M6 6l12 12" })
 ], -1)), Ie = [
-  Ve
+  Ue
 ], _e = {
   key: 4,
   class: "img-details"
@@ -215,82 +215,82 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
     const m = g, l = (h) => {
       if (!h)
         return "Unknown size";
-      const i = Math.floor(Math.log(h) / Math.log(1024));
-      return (h / Math.pow(1024, i)).toFixed(2) * 1 + " " + ["B", "KB", "MB", "GB"][i];
+      const s = Math.floor(Math.log(h) / Math.log(1024));
+      return (h / Math.pow(1024, s)).toFixed(2) * 1 + " " + ["B", "KB", "MB", "GB"][s];
     }, f = (h) => {
       m("removeFile", h);
     };
-    return (h, i) => (n(), d("div", {
-      class: R(["preview-container", e.previewWrapperClasses]),
-      onClick: i[4] || (i[4] = (t) => h.$emit("click", t))
+    return (h, s) => (n(), u("div", {
+      class: N(["preview-container", e.previewWrapperClasses]),
+      onClick: s[4] || (s[4] = (t) => h.$emit("click", t))
     }, [
-      (n(!0), d(_, null, de(e.files, (t) => M(h.$slots, "preview", {
+      (n(!0), u(_, null, de(e.files, (t) => M(h.$slots, "preview", {
         key: t.id,
         data: t,
         formatSize: l,
         removeFile: e.removeFileBuiltIn
       }, () => [
         v("div", {
-          class: R(["preview", {
+          class: N(["preview", {
             preview__multiple: e.multiple,
             preview__file: t.type === "file" && t.file && t.file.type && !t.file.type.includes("image/")
           }]),
-          style: j({
+          style: R({
             width: `${e.imgWidth} !important`,
             height: `${e.imgHeight} !important`
           }),
-          onClick: i[3] || (i[3] = w(() => {
+          onClick: s[3] || (s[3] = w(() => {
           }, ["stop"]))
         }, [
-          t.type === "file" && t.file && t.file.type && t.file.type.includes("image/") ? (n(), d("img", {
+          t.type === "file" && t.file && t.file.type && t.file.type.includes("image/") ? (n(), u("img", {
             key: 0,
             src: t.src,
             alt: t.name || t.file && t.file.name,
-            onClick: i[0] || (i[0] = w(() => {
+            onClick: s[0] || (s[0] = w(() => {
             }, ["stop"]))
-          }, null, 8, je)) : p("", !0),
-          t.type === "url" ? (n(), d("img", {
+          }, null, 8, Re)) : c("", !0),
+          t.type === "url" ? (n(), u("img", {
             key: 1,
             src: t.src,
             alt: t.name,
-            onClick: i[1] || (i[1] = w(() => {
+            onClick: s[1] || (s[1] = w(() => {
             }, ["stop"]))
-          }, null, 8, We)) : p("", !0),
-          t.type === "file" && t.file && t.file.type && !t.file.type.includes("image/") && !t.file.type.includes("video/") ? (n(), L(Re, {
+          }, null, 8, je)) : c("", !0),
+          t.type === "file" && t.file && t.file.type && !t.file.type.includes("image/") && !t.file.type.includes("video/") ? (n(), L(Ne, {
             key: 2,
             name: t.file ? t.file.name.split(".").pop() : "file",
-            onClick: i[2] || (i[2] = w(() => {
+            onClick: s[2] || (s[2] = w(() => {
             }, ["stop"]))
-          }, null, 8, ["name"])) : p("", !0),
-          (e.allowSelectOnPreview || e.mode === "edit") && t.type !== "url" ? (n(), d("button", {
+          }, null, 8, ["name"])) : c("", !0),
+          (e.allowSelectOnPreview || e.mode === "edit") && t.type !== "url" ? (n(), u("button", {
             key: 3,
             type: "button",
             class: "img-remove",
-            onClick: w((u) => e.removeFileBuiltIn ? e.removeFileBuiltIn(t) : f(t), ["stop"])
-          }, Ie, 8, Ue)) : p("", !0),
-          e.allowSelectOnPreview && e.mode !== "preview" ? (n(), d("div", _e, [
-            t.name || t.file && t.file.name ? (n(), d("h2", Le, b(t.name || t.file.name), 1)) : p("", !0),
-            t.size || t.file && t.file.size ? (n(), d("span", Te, b(l(t.size || t.file.size)), 1)) : p("", !0)
-          ])) : p("", !0),
-          t.type === "url" && (e.allowSelectOnPreview || e.mode === "edit") ? (n(), d("button", {
+            onClick: w((d) => e.removeFileBuiltIn ? e.removeFileBuiltIn(t) : f(t), ["stop"])
+          }, Ie, 8, We)) : c("", !0),
+          e.allowSelectOnPreview && e.mode !== "preview" ? (n(), u("div", _e, [
+            t.name || t.file && t.file.name ? (n(), u("h2", Le, b(t.name || t.file.name), 1)) : c("", !0),
+            t.size || t.file && t.file.size ? (n(), u("span", Te, b(l(t.size || t.file.size)), 1)) : c("", !0)
+          ])) : c("", !0),
+          t.type === "url" && (e.allowSelectOnPreview || e.mode === "edit") ? (n(), u("button", {
             key: 5,
             type: "button",
             class: "img-remove",
-            onClick: w((u) => e.removeFileBuiltIn ? e.removeFileBuiltIn(t) : f(t), ["stop"])
-          }, Xe, 8, qe)) : p("", !0),
-          t.type === "url" && e.allowSelectOnPreview ? (n(), d("div", Ge, [
-            t.name ? (n(), d("h2", Ke, b(t.name), 1)) : p("", !0),
-            t.size ? (n(), d("span", Je, b(l(t.size)), 1)) : p("", !0)
-          ])) : p("", !0),
-          t.type === "file" && (t.status === "pending" || t.status === "uploading") ? (n(), d("div", Qe, [
+            onClick: w((d) => e.removeFileBuiltIn ? e.removeFileBuiltIn(t) : f(t), ["stop"])
+          }, Xe, 8, qe)) : c("", !0),
+          t.type === "url" && e.allowSelectOnPreview ? (n(), u("div", Ge, [
+            t.name ? (n(), u("h2", Ke, b(t.name), 1)) : c("", !0),
+            t.size ? (n(), u("span", Je, b(l(t.size)), 1)) : c("", !0)
+          ])) : c("", !0),
+          t.type === "file" && (t.status === "pending" || t.status === "uploading") ? (n(), u("div", Qe, [
             v("div", {
               class: "progress-bar",
               "aria-valuenow": t.progress,
               "aria-valuemin": "0",
               "aria-valuemax": "100",
-              style: j({ width: `${t.progress}%` })
+              style: R({ width: `${t.progress}%` })
             }, b(t.progress) + "% ", 13, Ye)
-          ])) : p("", !0)
+          ])) : c("", !0)
         ], 6)
       ], !0)), 128))
     ], 2));
@@ -313,18 +313,18 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
       ...m,
       removeFileBuiltIn: (h) => l("removeFile", h)
     }));
-    return (h, i) => (n(), L(tt, W(f.value, {
-      onClick: i[0] || (i[0] = (t) => h.$emit("click", t)),
-      onMouseover: i[1] || (i[1] = (t) => h.$emit("mouseover", t)),
-      onMouseleave: i[2] || (i[2] = (t) => h.$emit("mouseleave", t))
+    return (h, s) => (n(), L(tt, j(f.value, {
+      onClick: s[0] || (s[0] = (t) => h.$emit("click", t)),
+      onMouseover: s[1] || (s[1] = (t) => h.$emit("mouseover", t)),
+      onMouseleave: s[2] || (s[2] = (t) => h.$emit("mouseleave", t))
     }), {
-      preview: U((t) => [
-        M(h.$slots, "preview", V(I(t)))
+      preview: W((t) => [
+        M(h.$slots, "preview", U(I(t)))
       ]),
       _: 3
     }, 16));
   }
-}, lt = (e) => (ee("data-v-046c8655"), e = e(), te(), e), ot = { class: "dropzone" }, rt = ["id", "accept", "multiple"], it = /* @__PURE__ */ lt(() => /* @__PURE__ */ v("div", { class: "titles" }, [
+}, lt = (e) => (ee("data-v-90b773a0"), e = e(), te(), e), ot = { class: "dropzone" }, rt = ["id", "accept", "multiple"], it = /* @__PURE__ */ lt(() => /* @__PURE__ */ v("div", { class: "titles" }, [
   /* @__PURE__ */ v("h1", { class: "m-0" }, "Drop your files here")
 ], -1)), st = { class: "m-0 description" }, nt = {
   key: 1,
@@ -425,26 +425,26 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
   ],
   setup(e, { expose: g, emit: m }) {
     const l = e, f = B(() => {
-      const r = [], o = l.mode === "preview" && l.allowSelectOnPreview && u.value && u.value.length > 0, a = l.selectFileStrategy === "merge" || l.selectFileStrategy === "replace" && !o && (!O.value || !l.ignoreOriginalPreviews) || l.mode !== "preview" || !l.allowSelectOnPreview;
-      return l.previews && Array.isArray(l.previews) && l.previews.length > 0 && a && l.previews.forEach((c, s) => {
-        c && typeof c == "string" && r.push({
-          id: `preview-${s}`,
-          src: c,
+      const r = [], o = l.mode === "preview" && l.allowSelectOnPreview && d.value && d.value.length > 0, a = l.selectFileStrategy === "merge" || l.selectFileStrategy === "replace" && !o && (!O.value || !l.ignoreOriginalPreviews) || l.mode !== "preview" || !l.allowSelectOnPreview;
+      return l.previews && Array.isArray(l.previews) && l.previews.length > 0 && a && l.previews.forEach((p, i) => {
+        p && typeof p == "string" && r.push({
+          id: `preview-${i}`,
+          src: p,
           type: "url",
           isPreview: !0,
-          name: `Image ${s + 1}`,
+          name: `Image ${i + 1}`,
           size: 0,
           // URL previews don't have size info
           progress: 100,
           status: "success",
           message: null
         });
-      }), u.value && Array.isArray(u.value) && u.value.length > 0 && u.value.forEach((c) => {
-        c && typeof c == "object" && r.push({
-          ...c,
-          type: c.isPreview ? "url" : "file",
+      }), d.value && Array.isArray(d.value) && d.value.length > 0 && d.value.forEach((p) => {
+        p && typeof p == "object" && r.push({
+          ...p,
+          type: p.isPreview ? "url" : "file",
           // Preview mode files should be treated as URL type for display
-          isPreview: !!c.isPreview
+          isPreview: !!p.isPreview
         });
       }), r;
     }), h = B(() => ({
@@ -458,10 +458,10 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
       imgHeight: l.imgHeight,
       previewWrapperClasses: l.previewWrapperClasses,
       removeFileBuiltIn: C
-    })), i = m, t = P(null), u = P([]), $ = P(!1), oe = P(null), O = P(!1), re = B(() => l.fileInputId ? l.fileInputId : A()), y = B(() => !l.disabled && (l.mode === "drop" || l.mode === "preview" && l.allowSelectOnPreview || l.mode === "edit")), A = () => Math.floor(Math.random() * Math.floor(Math.random() * Date.now())), q = (r) => {
-      const o = [...r.target.files].slice(0, l.maxFiles), a = o.map((s) => (s.size / 1024 / 1024).toFixed(2) <= l.maxFileSize), c = o.map((s) => l.accept ? l.accept.includes(s.type) : []);
-      if (a.every((s) => s === !0) && l.accept && c.every((s) => s === !0) || !l.accept && a.every((s) => s === !0)) {
-        const s = (S) => ({
+    })), s = m, t = P(null), d = P([]), $ = P(!1), oe = P(null), O = P(!1), re = B(() => l.fileInputId ? l.fileInputId : A()), y = B(() => !l.disabled && (l.mode === "drop" || l.mode === "preview" && l.allowSelectOnPreview || l.mode === "edit")), A = () => Math.floor(Math.random() * Math.floor(Math.random() * Date.now())), q = (r) => {
+      const o = [...r.target.files].slice(0, l.maxFiles), a = o.map((i) => (i.size / 1024 / 1024).toFixed(2) <= l.maxFileSize), p = o.map((i) => l.accept ? l.accept.includes(i.type) : []);
+      if (a.every((i) => i === !0) && l.accept && p.every((i) => i === !0) || !l.accept && a.every((i) => i === !0)) {
+        const i = (S) => ({
           file: S,
           id: A(),
           src: URL.createObjectURL(S),
@@ -486,87 +486,96 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
             type: "file",
             isPreview: !0
           }, K = o.map(S).filter(Boolean);
-          k === "replace" && (u.value = K, O.value = !0), k === "merge" && (u.value = [...u.value, ...K]);
+          k === "replace" && (d.value = K, O.value = !0), k === "merge" && (d.value = [...d.value, ...K]);
         } else
-          k === "replace" && (u.value = o.map(s), l.mode === "edit" && i("update:previews", [])), k === "merge" && (u.value = [...u.value, ...o.map(s)]);
+          k === "replace" && (d.value = o.map(i), l.mode === "edit" && s("update:previews", [])), k === "merge" && (d.value = [...d.value, ...o.map(i)]);
       }
-      if (a.some((s) => s !== !0)) {
-        const s = o.filter((k) => (k.size / 1024 / 1024).toFixed(2) > l.maxFileSize);
-        F("file-too-large", s);
+      if (a.some((i) => i !== !0)) {
+        const i = o.filter((k) => (k.size / 1024 / 1024).toFixed(2) > l.maxFileSize);
+        F("file-too-large", i);
       }
-      if (l.accept && c.some((s) => s !== !0)) {
-        const s = o.filter(
+      if (l.accept && p.some((i) => i !== !0)) {
+        const i = o.filter(
           (k) => !l.accept.includes(k.type)
         );
-        F("invalid-file-format", s);
+        F("invalid-file-format", i);
       }
-      u.value.filter((s) => s.status !== "success" && !s.isPreview).forEach((s) => {
-        l.serverSide && l.mode !== "preview" ? ie(s) : l.mode !== "preview" && (s.progress = 100, s.status = "success", s.message = "File uploaded successfully", i("fileUploaded", { file: s }));
+      d.value.filter((i) => i.status !== "success" && !i.isPreview).forEach((i) => {
+        l.serverSide && l.mode !== "preview" ? ie(i) : l.mode !== "preview" && (i.progress = 100, i.status = "success", i.message = "File uploaded successfully", s("fileUploaded", { file: i }));
       });
     }, ie = (r) => {
       const o = new XMLHttpRequest();
-      o.open("POST", l.uploadEndpoint || "", !0), Object.keys(l.headers).forEach((c) => {
-        o.setRequestHeader(c, l.headers[c]);
+      o.open("POST", l.uploadEndpoint || "", !0), Object.keys(l.headers).forEach((p) => {
+        o.setRequestHeader(p, l.headers[p]);
       });
       const a = new FormData();
       a.append("file", r.file), o.upload.onloadstart = () => {
         r.status = "uploading", r.message = "Upload in progress";
-      }, o.upload.onprogress = (c) => {
-        c.lengthComputable && (r.progress = Math.round(c.loaded / c.total * 100));
+      }, o.upload.onprogress = (p) => {
+        p.lengthComputable && (r.progress = Math.round(p.loaded / p.total * 100));
       }, o.onload = () => {
-        o.status === 200 ? (r.status = "success", r.message = "File uploaded successfully", i("fileUploaded", { file: r })) : (r.status = "error", r.message = o.statusText, F("upload-error", [r.file]));
+        o.status === 200 ? (r.status = "success", r.message = "File uploaded successfully", s("fileUploaded", { file: r })) : (r.status = "error", r.message = o.statusText, F("upload-error", [r.file]));
       }, o.onerror = () => {
         r.status = "error", r.message = "Upload failed", F("upload-error", [r.file]);
       }, o.send(a);
-    }, E = () => {
+    }, V = () => {
       y.value && ($.value = !$.value);
     }, se = (r) => {
-      if (E(), y.value) {
+      if (V(), y.value) {
         const o = {
           target: {
             files: [...r.dataTransfer.files]
           }
         };
-        i("drop", r), q(o);
+        s("drop", r), q(o);
       }
     }, C = (r) => {
-      if (!(!r || !r.id))
+      if (!(!r || !r.id)) {
         if (r.type === "url") {
           const o = [...l.previews || []], a = parseInt(r.id.replace("preview-", ""));
-          !isNaN(a) && a >= 0 && a < o.length && (o.splice(a, 1), i("update:previews", o), i("previewRemoved", r));
+          if (!isNaN(a) && a >= 0 && a < o.length)
+            if (o.splice(a, 1), s("update:previews", o), s("previewRemoved", r), l.modelValue && Array.isArray(l.modelValue)) {
+              const p = l.modelValue.filter(
+                (i) => i !== r.src && (i == null ? void 0 : i.src) !== r.src
+              );
+              s("update:modelValue", p.length ? p : null);
+            } else
+              s("update:modelValue", null);
         } else
-          r.isPreview ? H(r) : l.serverSide ? ne(r) : H(r);
+          r.isPreview ? E(r) : l.serverSide ? ne(r) : E(r);
+        d.value.length === 0 && s("update:modelValue", null);
+      }
     }, ne = (r) => {
       const o = new XMLHttpRequest();
       o.open("DELETE", l.deleteEndpoint ? `${l.deleteEndpoint}/${r.id}` : "", !0), Object.keys(l.headers).forEach((a) => {
         o.setRequestHeader(a, l.headers[a]);
       }), o.onload = () => {
-        o.status === 200 ? H(r) : F("delete-error", [r]);
+        o.status === 200 ? E(r) : F("delete-error", [r]);
       }, o.onerror = () => {
         F("delete-error", [r]);
       }, o.send();
-    }, H = (r) => {
-      !r || !r.id || (u.value = u.value.filter((o) => o && o.id !== r.id), t.value && (t.value.value = ""), i("fileRemoved", r), i("update:modelValue", u.value));
-    }, D = () => {
+    }, E = (r) => {
+      !r || !r.id || (d.value = d.value.filter((o) => o && o.id !== r.id), t.value && (t.value.value = ""), s("fileRemoved", r), s("update:modelValue", d.value));
+    }, H = () => {
       y.value && ($.value = !0);
-    }, N = () => {
+    }, D = () => {
       $.value = !1;
     }, Z = (r) => {
       y.value ? t.value.click() : r.preventDefault();
     }, F = (r, o) => {
-      i("error", { type: r, files: o });
+      s("error", { type: r, files: o });
     };
     J(() => {
-      u.value && u.value.length && i("update:modelValue", u.value);
+      d.value && d.value.length && s("update:modelValue", d.value);
     }), J(() => {
-      l.ignoreOriginalPreviews === !1 && (!u.value || !Array.isArray(u.value) || u.value.length === 0) && (O.value = !1);
+      l.ignoreOriginalPreviews === !1 && (!d.value || !Array.isArray(d.value) || d.value.length === 0) && (O.value = !1);
     });
     const ae = () => {
       f.value.forEach((r) => C(r));
     }, X = () => {
-      u.value = [], i("update:modelValue", []);
+      d.value = [], s("update:modelValue", []);
     }, G = () => {
-      i("update:previews", []);
+      s("update:previews", []);
     };
     return g({
       clearPreview: ae,
@@ -575,23 +584,23 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
       clearAll: () => {
         X(), G();
       }
-    }), (r, o) => (n(), d("div", ot, [
+    }), (r, o) => (n(), u("div", ot, [
       v("div", {
-        class: R(["dropzone-wrapper", [
+        class: N(["dropzone-wrapper", [
           {
             "dropzone-wrapper--active": $.value,
             "dropzone-wrapper--disabled": e.disabled
           },
           e.state ? `dropzone-wrapper--${e.state}` : ""
         ]]),
-        style: j({ width: e.width, height: e.height }),
-        onDragenter: w(E, ["prevent"]),
-        onDragleave: w(E, ["prevent"]),
+        style: R({ width: e.width, height: e.height }),
+        onDragenter: w(V, ["prevent"]),
+        onDragleave: w(V, ["prevent"]),
         onDrop: w(se, ["prevent"]),
         onDragover: o[4] || (o[4] = w(() => {
         }, ["prevent"])),
-        onMouseover: D,
-        onMouseleave: N,
+        onMouseover: H,
+        onMouseleave: D,
         ref_key: "dropzoneWrapper",
         ref: oe,
         onClick: w(Z, ["self"]),
@@ -607,7 +616,7 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
           onInput: q,
           multiple: e.multiple
         }, null, 40, rt),
-        !f.value.length || e.previewPosition === "outside" ? (n(), d(_, { key: 0 }, [
+        !f.value.length || e.previewPosition === "outside" ? (n(), u(_, { key: 0 }, [
           M(r.$slots, "placeholder-img", {}, () => [
             Q(fe)
           ], !0),
@@ -615,33 +624,33 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
             it
           ], !0),
           M(r.$slots, "button", { fileInput: t.value }, () => [
-            e.showSelectButton ? (n(), d("button", {
+            e.showSelectButton ? (n(), u("button", {
               key: 0,
               type: "button",
               onClick: o[0] || (o[0] = (a) => {
-                var c;
-                return (c = t.value) == null ? void 0 : c.click();
+                var p;
+                return (p = t.value) == null ? void 0 : p.click();
               }),
               class: "select-file"
-            }, " Select File ")) : p("", !0)
+            }, " Select File ")) : c("", !0)
           ], !0),
           M(r.$slots, "description", {}, () => [
             v("p", st, " Files must be under " + b(e.maxFileSize) + "MB " + b(e.accept ? `and in ${e.accept} formats` : ""), 1)
           ], !0)
-        ], 64)) : p("", !0),
-        e.previewPosition === "inside" && f.value.length ? (n(), L(Y, W({ key: 1 }, h.value, {
+        ], 64)) : c("", !0),
+        e.previewPosition === "inside" && f.value.length ? (n(), L(Y, j({ key: 1 }, h.value, {
           onRemoveFile: C,
           onClick: o[1] || (o[1] = (a) => y.value && Z(a)),
-          onMouseover: o[2] || (o[2] = (a) => y.value ? D : void 0),
-          onMouseleave: o[3] || (o[3] = (a) => y.value ? N : void 0)
+          onMouseover: o[2] || (o[2] = (a) => y.value ? H : void 0),
+          onMouseleave: o[3] || (o[3] = (a) => y.value ? D : void 0)
         }), {
-          preview: U((a) => [
-            M(r.$slots, "preview", V(I(a)), void 0, !0)
+          preview: W((a) => [
+            M(r.$slots, "preview", U(I(a)), void 0, !0)
           ]),
           _: 3
-        }, 16)) : p("", !0)
+        }, 16)) : c("", !0)
       ], 38),
-      e.disabled ? (n(), d("div", {
+      e.disabled ? (n(), u("div", {
         key: 0,
         class: "dropzone-wrapper__disabled",
         onClick: o[5] || (o[5] = w(() => {
@@ -650,22 +659,22 @@ const fe = /* @__PURE__ */ T(ue, [["render", we]]), ge = {
         }, ["prevent"])),
         onDragover: o[7] || (o[7] = w(() => {
         }, ["prevent"]))
-      }, null, 32)) : p("", !0),
-      e.previewPosition === "outside" && f.value.length ? (n(), d("div", nt, [
-        Q(Y, W(h.value, {
+      }, null, 32)) : c("", !0),
+      e.previewPosition === "outside" && f.value.length ? (n(), u("div", nt, [
+        Q(Y, j(h.value, {
           onRemoveFile: C,
-          onMouseover: o[8] || (o[8] = (a) => y.value ? D : void 0),
-          onMouseleave: o[9] || (o[9] = (a) => y.value ? N : void 0)
+          onMouseover: o[8] || (o[8] = (a) => y.value ? H : void 0),
+          onMouseleave: o[9] || (o[9] = (a) => y.value ? D : void 0)
         }), {
-          preview: U((a) => [
-            M(r.$slots, "preview", V(I(a)), void 0, !0)
+          preview: W((a) => [
+            M(r.$slots, "preview", U(I(a)), void 0, !0)
           ]),
           _: 3
         }, 16)
-      ])) : p("", !0)
+      ])) : c("", !0)
     ]));
   }
-}, pt = /* @__PURE__ */ T(at, [["__scopeId", "data-v-046c8655"]]);
+}, pt = /* @__PURE__ */ T(at, [["__scopeId", "data-v-90b773a0"]]);
 export {
   pt as default
 };
