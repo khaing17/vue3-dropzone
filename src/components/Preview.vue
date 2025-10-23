@@ -48,7 +48,7 @@
         />
         
         <!-- Remove button (outside of img-details to be always visible) -->
-        <button class="img-remove" v-if="(allowSelectOnPreview || mode === 'edit') && item.type !== 'url'" @click.stop="removeFileBuiltIn ? removeFileBuiltIn(item) : removeFile(item)">
+        <button type="button" class="img-remove" v-if="(allowSelectOnPreview || mode === 'edit') && item.type !== 'url'" @click.stop="removeFileBuiltIn ? removeFileBuiltIn(item) : removeFile(item)">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -74,7 +74,7 @@
         </div>
         
         <!-- Remove button for URL previews (outside of img-details to be always visible) -->
-        <button class="img-remove" v-if="item.type === 'url' && (allowSelectOnPreview || mode === 'edit')" @click.stop="removeFileBuiltIn ? removeFileBuiltIn(item) : removeFile(item)">
+        <button type="button" class="img-remove" v-if="item.type === 'url' && (allowSelectOnPreview || mode === 'edit')" @click.stop="removeFileBuiltIn ? removeFileBuiltIn(item) : removeFile(item)">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

@@ -43,6 +43,7 @@
         </slot>
         <slot name="button" :fileInput="fileInput">
           <button
+          type="button"
               @click="fileInput?.click()"
               v-if="showSelectButton"
               class="select-file"
